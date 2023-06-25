@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Data Collection</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap&subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet"> 
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="icon" type="image/png" href={{image4}} sizes="32x32" />
+        <link rel="icon" type="image/png" href={{image5}} sizes="16x16" />
+        <link rel="stylesheet" href="{{ url_for ('static',filename='css/owl.carousel.min.css')}}" media="screen">
+        <link rel="stylesheet" href="{{ url_for ('static',filename='css/font-awesome.min.css')}}" media="screen">
+        <link rel="stylesheet" href="{{ url_for ('static',filename='css/reset.css')}}" media="screen">
+        <link rel="stylesheet" href="{{ url_for ('static',filename='css/style.css')}}" media="screen">
+        <link rel="stylesheet" href="{{ url_for ('static',filename='css/responsive.css')}}" media="screen">
+
+        <link rel="stylesheet" href="{{ url_for ('static',filename='css/animate.css')}}" media="screen">
+        <link rel="stylesheet" href="{{ url_for ('static',filename='css/bootstrap.min.css')}}" media="screen">
+
+        <script class="u-script" type="text/javascript" src="{{ url_for ('static',filename='script/vendor/modernizr-2.8.3.min.js')}}" defer=""></script>
+        <script class="u-script" type="text/javascript" src="{{ url_for ('static',filename='script/vendor/jquery-1.12.0.min.js')}}" defer=""></script>
+        <script class="u-script" type="text/javascript" src="{{ url_for ('static',filename='script/jquery-easing/jquery.easing.compatibility.js')}}" defer=""></script>
+        <script class="u-script" type="text/javascript" src="{{ url_for ('static',filename='script/jquery-easing/jquery.easing.js')}}" defer=""></script>
+        <script class="u-script" type="text/javascript" src="{{ url_for ('static',filename='script/jquery-easing/jquery.easing.min.js')}}" defer=""></script>
+        <script class="u-script" type="text/javascript" src="{{ url_for ('static',filename='script/ajax-mail.js')}}" defer=""></script>
+        <script class="u-script" type="text/javascript" src="{{ url_for ('static',filename='script/bootstrap.min.js')}}" defer=""></script>
+        <script class="u-script" type="text/javascript" src="{{ url_for ('static',filename='script/jquery.nicescroll.min.js')}}" defer=""></script>
+        <script class="u-script" type="text/javascript" src="{{ url_for ('static',filename='script/main.js')}}" defer=""></script>
+        <script class="u-script" type="text/javascript" src="{{ url_for ('static',filename='script/owl.carousel.min.js')}}" defer=""></script>
+        <script class="u-script" type="text/javascript" src="{{ url_for ('static',filename='script/parallax.min.js')}}" defer=""></script>
+ 
+<style>
+  .GroupMembersNames {
+    position: relative;
+    font-family: Courier New;
+  }
+  .NamesText {
+   
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+    color: white;
+   }
+   .Appshowheader
+   {
+ 
+         width: 100%;
+         position: fixed;        
+         background: #333;
+         padding: 10px 0;
+         color: white;
+     top: 0;
+     }
+     nav a{
+      color: #fff;
+      text-decoration: none;
+      padding: 7px 150px;
+      display: inline-block;
+  }
+
+  .Appshowfooter
+	{
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        color: white;
+        bottom: 0;
+        padding: 8px 600px;
+    }
+    
+  </style>  
+      </head>
+
+    <body>
+      <div class="Appshowheader">
+        <nav>
+            <a href="#section0">Home</a>
+            <a href="#section1">Last Predicted Values</a>
+            <a href="#section3">Predicted Label</a>
+        </nav>
+    <br>
+	</div>                                <!-- Main Menu End -->
+>
+		<!-- Header Area End -->
+		<!-- Section0 Area Start -->
+        <section id="section0">
+          <br><br>
+          <div class="GroupMembersNames">
+            <img src={{image3}} width="1310" 
+               height="500">
+            <div class="NamesText">
+              <h1>Data Collection App</h1>
+              </div>
+          </div>
+           
+        </section>
+
+		<!-- Section0 Area End -->
+        <!-- Section1 Start -->
+        <section id="section1" class="topOff">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body colorfullPanel text-center">
+                              <br><br><br><br><br>
+                                <h2><span>x</span>-axis
+                                    <img class="classic" src={{image44}}>
+
+                                    </h2>
+                                    <p><span style="white-space:nowrap">{{xaxis}}</span></p>                            
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="panel panel-default colorfullParent">
+                            <div class="panel-body colorfullPanel text-center">
+                                <br><br><br><br><br>
+                                <h2><span>y</span>-axis
+                                    <img class="classic" src={{image44}}>
+
+                                    </h2>
+                                    <p><span style="white-space:nowrap">{{yaxis}}</span></p>                            
+                                    </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="panel panel-default">
+                            <div class="panel-body colorfullPanel text-center">
+                                <br><br><br><br><br>
+                                <h2><span>z</span>-axis
+                                    <img class="classic" src={{image44}}>
+
+                                    </h2>
+                                    <p><span style="white-space:nowrap">{{zaxis}}</span></p>                            
+                                    </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog Area Start -->
+        <section id="section5" class="Predicted">
+            <div class="row">
+                    <div class="col-xs-12">
+                        <div class="blog-section-title text-center">
+                            <h3>Indispensable</h3>
+                            <h2>Our Predicted Label</h2>
+							<h1>{{activity1}}</h1>
+                        </div>
+                    </div>
+                                </div>
+                           
+            </section>
+       <br><br><br><br>
+      
+       
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+        <script src="js/jquery-easing/jquery.easing.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/parallax.min.js"></script>
+        <script src="js/ajax-mail.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/main.js"></script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDyIMWhs-crjT0yhctbRjfJFq75FlEhSzE&callback=initMap">
+        </script>
+    </body>
+</html>
